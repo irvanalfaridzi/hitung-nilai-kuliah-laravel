@@ -14,5 +14,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('nilai');
 });
+
+//perhitungan nilai
+Route::get('/nilai', 'Nilai\NilaiController@index');
+Route::get('/nilai/hitung', 'Nilai\NilaiController@hitung');
