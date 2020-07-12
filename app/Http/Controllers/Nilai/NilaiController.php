@@ -9,10 +9,10 @@ use App\Model\Perhitungan;
 class NilaiController extends Controller
 {
     public function index(){
-        return view('Nilai/index');
+        return view('nilai/index');
     }
 
-    public function hitung(){
+    public function hitung(request $request){
         $perhitungan = new Perhitungan;
         $nama       = $request->input('nama');
         $nim        = $request->input('nim');

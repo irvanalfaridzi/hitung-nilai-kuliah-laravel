@@ -1,4 +1,4 @@
-@extends('master')
+@extends('nilai/master')
 @section('content')
 	<div class="col-lg-12">
 		<h1 class="text-center">Perhitungan Nilai</h1><br>
@@ -19,7 +19,7 @@
 
 				<div class="card">
 					<div class="card-body">
-                        <form action="Nilai/hitung" method="post">
+                        <form action="nilai/hitung" method="post">
                                 <input type = "hidden" name = "_token" value = "<?php echo csrf_token() ?>">
                                 <div class="form-group">
                                     <label for="nama">Nama</label>
