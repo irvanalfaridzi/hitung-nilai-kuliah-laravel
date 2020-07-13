@@ -30,9 +30,19 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="row">
+                                <div class="col-lg-6">
                                 <div class="form-group">
                                     <label for="usia">Nilai Akhir</label>
-                                    <input class="form-control" type="text" name="uas" value={{ $na }}>
+                                    <input class="form-control" type="text" name="na" value={{ $na }}>
+                                </div>
+                                </div>
+                                <div class="col-lg-6">
+                                <div class="form-group">
+                                    <label for="usia">Nilai Huruf</label>
+                                    <input class="form-control" type="text" name="huruf" value={{ $huruf }}>
+                                </div>
+                                </div>
                                 </div>
                                 <div class="form-group">
                                     <a href="/nilai"><input class="btn btn-primary" type="submit" value="Kembali"></a>

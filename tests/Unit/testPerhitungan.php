@@ -61,4 +61,14 @@ class testPerhitungan extends TestCase
         $this->assertEquals(100,$hasil_perhitungan);
 
     }
+
+    public function testHuruf()
+    {
+        $perhitungan = new Perhitungan();
+
+        $hasil_perhitungan = $perhitungan->huruf(40);
+
+        $this->assertEquals('D',$hasil_perhitungan);
+
+    }
 }

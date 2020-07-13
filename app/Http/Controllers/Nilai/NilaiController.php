@@ -24,6 +24,7 @@ class NilaiController extends Controller
         $nuts = $perhitungan->hitungUts($uts);
         $nuas = $perhitungan->hitungUas($uas);
         $na = $perhitungan->hitungNilaiAkhir($ntugas, $nuts, $nuas);
-        return view('nilai/hitung',['nama' => $nama, 'nim' => $nim, 'matakuliah' => $matakuliah, 'tugas' => $tugas, 'uts' => $uts, 'uas' => $uas, 'ntugas' => $ntugas, 'nuts' => $nuts, 'nuas' => $nuas, 'na' => $na]);
+        $huruf = $perhitungan->huruf($na);
+        return view('nilai/hitung',['nama' => $nama, 'nim' => $nim, 'matakuliah' => $matakuliah, 'tugas' => $tugas, 'uts' => $uts, 'uas' => $uas, 'ntugas' => $ntugas, 'nuts' => $nuts, 'nuas' => $nuas, 'na' => $na, 'huruf' => $huruf]);
     }
 }
