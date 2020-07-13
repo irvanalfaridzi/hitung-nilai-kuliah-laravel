@@ -29,17 +29,17 @@ class Perhitungan extends Model
     public function huruf($a){
         if ($a<=100 && $a>=80) {
             $huruf = "A";
-        } else if ($a<=79 && $a>= 75) {
+        } else if ($a<80 && $a>= 75) {
             $huruf = "B+";
-        } elseif ($a<=74 && $a>= 65) {
+        } elseif ($a<75 && $a>= 65) {
             $huruf = "B";
-        } elseif ($a<=64 && $a>= 60) {
+        } elseif ($a<65 && $a>= 60) {
             $huruf = "C+";
-        } elseif ($a<=59 && $a>= 55) {
+        } elseif ($a<60 && $a>= 55) {
             $huruf = "C";
-        } elseif ($a<=54 && $a>= 40) {
+        } elseif ($a<55 && $a>= 40) {
             $huruf = "D";
-        } elseif ($a<=39 && $a>= 0) {
+        } elseif ($a<40 && $a>= 0) {
             $huruf = "E";
         }
 

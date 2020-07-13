@@ -66,9 +66,9 @@ class testPerhitungan extends TestCase
     {
         $perhitungan = new Perhitungan();
 
-        $hasil_perhitungan = $perhitungan->huruf(40);
+        $hasil_perhitungan = $perhitungan->huruf(74.9);
 
-        $this->assertEquals('D',$hasil_perhitungan);
+        $this->assertEquals('B',$hasil_perhitungan);
 
     }
 }
