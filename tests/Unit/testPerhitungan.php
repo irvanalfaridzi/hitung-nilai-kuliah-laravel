@@ -12,15 +12,6 @@ class testPerhitungan extends TestCase
      *
      * @return void
      */
-    public function testPertambahan()
-    {
-        $perhitungan = new Perhitungan();
-
-        $hasil_perhitungan = $perhitungan->pertambahan(2,2);
-
-        $this->assertEquals(4,$hasil_perhitungan);
-
-    }
 
     public function testTugas()
     {
@@ -66,9 +57,9 @@ class testPerhitungan extends TestCase
     {
         $perhitungan = new Perhitungan();
 
-        $hasil_perhitungan = $perhitungan->huruf(74.9);
+        $hasil_perhitungan = $perhitungan->huruf(100);
 
-        $this->assertEquals('B',$hasil_perhitungan);
+        $this->assertEquals('A',$hasil_perhitungan);
 
     }
 }

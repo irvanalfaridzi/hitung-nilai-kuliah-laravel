@@ -22,10 +22,6 @@ class Perhitungan extends Model
         return $a + $b + $c;
     }
 
-    public function pertambahan($a,$b){
-        return $a + $b;
-    }
-
     public function huruf($a){
         if ($a<=100 && $a>=80) {
             $huruf = "A";
